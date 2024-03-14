@@ -6,6 +6,18 @@
   <title>Рандомайзер для тех, кто заслуживает меньшего</title>
   <link rel="stylesheet" type="text/css" href="random.css">
   <meta name="description" content="выбираем гондона, но не путина. такие времена.">
+</head>
+<body>
+   <div class="row">
+     <div class="col-2"></div>
+     <div class="col-8" align="center">
+       <h1>Ща мы тебе подберём гондона-2024.</h1>
+       <div class="myform">
+      <button id="myBut" onclick="generate()">Generate!</button><br><br>
+        <div id="output"> </div>
+      </div>
+    </div>
+  </div>
   <script>
     function randNum() {
   return Math.random() % 4;
@@ -23,17 +35,5 @@ function generate () {
 }
 document.getElementById("myBut").addEventListener("click", generate);
   </script>
-</head>
-<body>
-   <div class="row">
-     <div class="col-2"></div>
-     <div class="col-8" align="center">
-       <h1>Ща мы тебе подберём гондона-2024.</h1>
-       <div class="myform">
-      <button id="myBut" onclick="generate()">Generate!</button><br><br>
-        <div id="output"> </div>
-      </div>
-    </div>
-  </div>
 </body>
 </html>

@@ -12,13 +12,13 @@
 }
 function generate () {
   let rand = randNum();
-  if rand == 0:
-    let output = "подотрись бюллетенем и поставь 2 галки в любых клетках"
-  if rand == 1:
-    let output = "твой бюллетень полапал слуцкий"
-  if rand == 2:
-    let output = "хватит терпеть капитализм, харитонов за геев-освободителей!"
-  else: output = "слушаем каца, надуваем давАНКОООВА"
+  if (rand == 0) {
+    let output = "подотрись бюллетенем и поставь 2 галки в любых клетках";}
+  if (rand == 1) {
+    let output = "твой бюллетень полапал слуцкий";}
+  if (rand == 2) {
+    let output = "хватит терпеть капитализм, харитонов за геев-освободителей!";}
+  else {let output = "слушаем каца, надуваем давАНКОООВА";}
   document.getElementById("output").innerHTML = output;
 }
 document.getElementById("myBut").addEventListener("click", generate);

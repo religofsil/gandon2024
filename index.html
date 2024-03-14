@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>JavaScript Random Gandon Generator</title>
+  <link rel="stylesheet" type="text/css" href="random.css">
+  <meta name="description" content="выбираем гондона, но не путина. такие времена.">
+  <script>
+    function randNum() {
+  return Math.random() % 4;
+}
+function generate () {
+  let rand = randNum();
+  if rand == 0:
+    let output = "подотрись бюллетенем и поставь 2 галки в любых клетках"
+  if rand == 1:
+    let output = "твой бюллетень лапал слуцкий"
+  if rand == 2:
+    let output = "хватит терпеть капитализм, харитонов за геев-освободителей!"
+  else: output = "слушаем каца, надуваем давАНКОООВА"
+  document.getElementById("output").innerHTML = output;
+}
+document.getElementById("myBut").addEventListener("click", generate);
+  </script>
+</head>
+<body>
+   <div class="row">
+     <div class="col-2"></div>
+     <div class="col-8" align="center">
+       <h1>Ща мы тебе подберём гондона-2024.</h1>
+       <div class="myform">
+      I will generate a random integer between <br><br><input type="number" id="min_value" placeholder="Min Value"><br>
+      <br>and<br><br>
+      <input type="number" id="max_value" placeholder="Max Value"><br>
+      <br><br>
+      <button id="myBut" onclick="generate()">Generate!</button><br><br>
+        <div class="green" id="output"> </div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
